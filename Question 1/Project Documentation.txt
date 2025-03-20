@@ -1,0 +1,32 @@
+Project Documentation 
+
+Overview
+This project is a React and FastAPI-based dashboard that allows users to interact with data dynamically. Users can fetch and display user lists, top users, popular posts, and latest posts through API calls.
+
+Project Structure
+
+Backend (main.py)
+Uses FastAPI to serve API endpoints.
+Includes CORS middleware for frontend-backend communication.
+Returns data in JSON format.
+
+Frontend (src/ folder)
+Built with React for a dynamic UI.
+Fetches data from the backend and displays it in a dashboard.
+Provides buttons and inputs for user interaction.
+
+API Endpoints
+/users - Returns a list of all users.
+/top_users - Returns a list of top 10 users.
+/posts?type=popular or /posts?type=latest - Returns popular or latest posts.
+/ - Returns a message confirming that the backend is running.
+
+Frontend Functionalities
+Fetch Users Button - Calls /users and displays user data.
+Fetch Top Users Button - Calls /top_users and shows top users.
+Dropdown for Post Type - Allows selection between popular or latest posts.
+Fetch Posts Button - Calls /posts API based on selection.
+API Input Field - Allows users to enter an API URL and fetch data dynamically.
+
+Conclusion
+This project provides a functional API-powered dashboard with a modern UI. Set 2 enhances backend and frontend features with better UI and expanded data.
